@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	<title>Contact us</title>
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/newcontact2.css">
+</head>
+<body>
+	<!-- Loader -->
+  <section class="loader-bg">
+    <div class="center">
+      <div class="cir">
+        <span class="c1"></span>
+        <span class="c2"></span>
+      </div>
+    </div>
+  </section>
+	<!-- header begins -->
+	<header>
+		<div class="container">
+			<nav class="nav">
+				<div class="menu-toggle">
+					<i class="fa fa-bars"></i>
+					<i class="fa fa-times"></i>
+				</div>
+				<a href="website.html" class="logo"><img src="./images/img268.png" alt=""></a>
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a href="event.html" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="eventabt.html" class="nav-link">About</a>
+					</li>
+					<li class="nav-item">
+						<a href="reservation.html" class="nav-link">Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a href="firebase.html" class="nav-link">Contact</a>
+					</li>
+					
+					
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section>
+		<div class="container">
+			 <div class="user singinBx">
+			 	<div class="imgBx"><img src="images/img211.jpg"></div>
+			 	<div class="formBx">
+			 		<form method="post">
+			 			<h2>GET NOTIFICATIONS</h2>
+			 			<input type="text" name="" placeholder="Full-name" id="name" 
+			 			>
+			 			<input type="email" name="" placeholder="Email" id="email">
+			 			<input type="button" name="" id="submit" value="Login">
+			 			<p class="signup">Need to get in touch? <a href="#">Send message.</a> </p>
+			 		</form>
+			 	</div>
+			 </div>
+			 
+		</div>
+	</section>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-firestore.js"></script>
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+	     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-analytics.js"></script>
+
+	<script src="js/login.js"></script>
+	<script src="js/scrollreveal.js"></script>
+    <script src="js/website.js"></script>
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript">
+	    setTimeout(function(){
+	      $('.loader-bg').fadeToggle();
+	    }, 1500);
+	</script>
+</body>
+</html>

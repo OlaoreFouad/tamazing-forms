@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tamazing Evant</title>
+ <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />  
+  <link rel="stylesheet" href="css/firebase.css">
+</head>
+<body>
+  <!-- Loader -->
+  <section class="loader-bg">
+    <div class="center">
+      <div class="cir">
+        <span class="c1"></span>
+        <span class="c2"></span>
+      </div>
+    </div>
+  </section>
+   <div class="container">
+    <a href="event.html"><h1 class="brand"><span>Tamazing</span> Event</h1></a>
+    <div class="wrapper">
+      <div class="company-info">
+        <h3>Tamazing Events</h3>
+        <ul>
+          <li><i class="fa fa-road"></i> 44 Something st</li>
+          <li><i class="fa fa-phone"></i> (555) 555-5555</li>
+          <li><i class="fa fa-envelope"></i> test@acme.test</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>Email Us</h3>
+        <div class="alert">Your message has been sent</div>
+        <form id="contactForm">
+          <p>
+            <label>Name</label>
+            <input type="text" name="name" id="name">
+          </p>
+          <p>
+            <label>Service Required</label>
+            <input type="text" name="service" id="service">
+          </p>
+          <p>
+            <label>Email Address</label>
+            <input type="email" name="email" id="email">
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="text" name="phone" id="phone">
+          </p>
+          <p class="full">
+            <label>Message</label>
+            <textarea name="message" rows="5" id="message"></textarea>
+          </p>
+          <p class="full">
+            <button id="submit" type="button">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-analytics.js"></script>
+
+  <script src="./js/firebase1.js"></script>  
+  <script src="./js/jquery.js"></script>
+  <script type="text/javascript">
+    setTimeout(function(){
+      $('.loader-bg').fadeToggle();
+    }, 1500);
+  </script>
+</body>
+</html>
